@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head" . }}
+
+  <body class="roboto bg-black-05">
+    {{ partial "nav" . }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer" . }}
+  </body>
+
+</html>
