@@ -2,6 +2,46 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.tillium{
+	font-family: 'Titillium Web',sans-serif;
+}
+
+.mw{
+	font-family: 'Merriweather',serif;
+}
+
+.dance{
+	font-family: 'Dancing Script', cursive;
+}
+
+.clicker{
+font-family: 'Clicker Script', cursive;
+}
+
+/* Colors */
+
+.khaki{
+	color: #b9ba95;
+}
+
+.bg-khaki{
+	background-color: #b9ba95;
+}
+
+/* Custom */
+
+.h80px {
+	height: 80px;
+}
+
+.top--50{
+	top: -50px;
+}
+
+.left--100{
+	left: -100px;
+}
+
 	/*
   	Flaticon icon font: Flaticon
   	Creation date: 22/01/2018 09:50
