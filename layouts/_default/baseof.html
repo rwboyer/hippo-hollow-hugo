@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   {{ partial "head" . }}
-
   <body class="tillium near-black">
     {{ partial "nav" . }}
-    {{ block "main" . }}{{ end }}
-    {{ partial "footer" . }}
+    <div id="page-wrap" class="page-wrap">
+      
+        {{ partial "header" . }}
+        {{ block "main" . }}{{ end }}
+        {{ partial "footer" . }}
+      
+    </div>
   </body>
 
 </html>
