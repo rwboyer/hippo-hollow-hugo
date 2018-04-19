@@ -1,0 +1,32 @@
+<article class="fl w-100 w-third-l lh-copy">
+  <header class="mv2 pb2 mh4 tc bb b--light-red">
+    <h2 class="mw f3 fw5 mv0">{{ .Title }}</h2>
+    <h4 class="mv0 f4 fw7 light-red ttu">{{ .Params.subtitle }}</h4>        
+  </header>
+  <p class="mv0">
+    <ul class="list mh4 ph0 f6 black-50">
+      <li>Budget Friendly</li>
+      <li>Your Choice Of Meats</li>
+      <li>No Hassle, We'll Deliver Every Month</li>
+    </ul>
+  </p>
+  <div class="pv3">
+    <button
+        class="snipcart-add-item f5 fw5 dim no-underline br-pill ph3 pv2 mb2 db white bg-light-red bn ttu center"
+        data-item-id="{{ .Params.item_id }}"
+        data-item-name="{{ .Params.item_name }}"
+        data-item-price="{{ .Params.item_price }}"
+        {{ if isset .Params ".item_payment_interval" }}
+        data-item-payment-interval="{{ .Params.item_payment_interval }}"
+        data-item-payment-interval-count="{{ .Params.item_payment_count }}"
+        {{ end }}
+        data-item-weight="{{ .Params.item_weight }}"
+        data-item-url="{{ .Permalink }}"
+        data-item-custom1-name="{{ .Params.item_custom1_name }}"
+        data-item-custom1-options="{{ .Params.item_custom1_options }}"
+        data-item-custom1-value="{{ .Params.item_custom1_value }}"
+        data-item-description="{{ .Params.item_description }}">
+            Add To Cart
+    </button>        
+  </div>
+</article>

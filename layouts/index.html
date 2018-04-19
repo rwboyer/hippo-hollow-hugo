@@ -29,86 +29,9 @@
   <div class="cf mw8 center">
     <h2 class="khaki f1 fw9 mv4 tracked ttu tc">Meat Box Subscriptions</h2>
     <p class="mt0 mb4 lh-copy measure center tc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus officia repellendus est in laborum voluptas dolorem quasi eligendi laboriosam porro eum debitis, pariatur nobis minus nihil? Fugiat doloribus eligendi dolorum.</p>
-    <article class="fl w-100 w-third-l lh-copy">
-      <header class="mv2 pb2 mh4 tc bb b--light-red">
-        <h3 class="mw f3 fw5 mv0">Pre-paid 6 Months</h3>
-        <h4 class="mv0 f4 fw7 light-red ttu">Save $100</h4>        
-      </header>
-      <p class="mv0">
-        <ul class="list mh4 ph0 f6 black-50">
-          <li>Budget Friendly</li>
-          <li>Your Choice Of Meats</li>
-          <li>No Hassle, We'll Deliver Every Month</li>
-        </ul>
-      </p>
-      <div class="pv3">
-        <button
-            class="snipcart-add-item f5 fw5 dim no-underline br-pill ph3 pv2 mb2 db white bg-light-red bn ttu center"
-            data-item-id="1"
-            data-item-name="Meat Box Monthly Subscription"
-            data-item-price="223.00"
-            data-item-payment-interval="Month"
-            data-item-payment-interval-count="1"
-            data-item-weight="20"
-            data-item-url="{{ .Permalink }}"
-            data-item-custom1-name="Customize Your Box"
-            data-item-custom1-options="Beef|Pork|Chicken[-20.00]|Beef&Pork|Beef&Chicken|Pork&Chicken"
-            data-item-custom1-value="Beef"
-            data-item-description="Meat Box">
-                Add To Cart
-        </button>        
-      </div>
-    </article>
-    <article class="fl w-100 w-third-l lh-copy">
-      <header class="mv2 pb2 mh4 tc bb b--light-red">
-        <h3 class="mw f3 fw5 mv0">Pre-paid 6 Months</h3>
-        <h4 class="mv0 f4 fw7 light-red ttu">Save $400</h4>
-      </header>
-      <p class="mv0">
-        <ul class="list mh4 ph0 f6 black-50">
-          <li>Save A Bundle</li>
-          <li>Your Choice Of Meats</li>
-          <li>No Hassle, We'll Deliver Every Month</li>
-        </ul>
-      </p>
-      <div class="pv3">
-        <button
-            class="snipcart-add-item  f5 fw5 dim no-underline br-pill ph3 pv2 mb2 db white bg-light-red bn ttu center"
-            data-item-id="2"
-            data-item-name="Meat Box 6 Months"
-            data-item-price="1200.00"
-            data-item-weight="20"
-            data-item-url="{{ .Permalink }}"
-            data-item-description="Meat Box">
-                Add To Cart
-        </button>                
-      </div>
-    </article>
-    <article class="fl w-100 w-third-l lh-copy">
-      <header class="mv2 pb2 mh4 tc bb b--light-red">
-        <h3 class="mw f3 fw5 mv0">Pre-paid 1 Year</h3>
-        <h4 class="mv0 f4 fw7 light-red ttu">Save $1000</h4>        
-      </header>
-      <p class="mv0">
-        <ul class="list mh4 ph0 f6 black-50">
-          <li>Save Even More</li>
-          <li>Your Choice Of Meats</li>
-          <li>No Hassle, We'll Deliver Every Month</li>
-        </ul>
-      </p>
-      <div class="pv3">
-        <button
-            class="snipcart-add-item  f5 fw5 dim no-underline br-pill ph3 pv2 mb2 db white bg-light-red bn ttu center"
-            data-item-id="3"
-            data-item-name="Meat Box 12 Months"
-            data-item-price="2400.00"
-            data-item-weight="20"
-            data-item-url="{{ .Permalink }}"
-            data-item-description="Meat Box">
-                Add To Cart
-        </button>                
-      </div>
-    </article>
+    {{ range where .Data.Pages "Dir" "in" "/shop/meat-boxes/" }}
+      {{ partial "home-product" . }}
+    {{ end }}
   </div>
 </section>
 <section class="w-100 bg-near-white pv4 center">
