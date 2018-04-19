@@ -16,7 +16,7 @@
         data-item-id="{{ .Params.item_id }}"
         data-item-name="{{ .Params.item_name }}"
         data-item-price="{{ .Params.item_price }}"
-        {{ if isset .Params ".item_payment_interval" }}
+        {{ if isset .Params "item_payment_interval" }}
         data-item-payment-interval="{{ .Params.item_payment_interval }}"
         data-item-payment-interval-count="{{ .Params.item_payment_count }}"
         {{ end }}
