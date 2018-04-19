@@ -1,6 +1,7 @@
 ---
 title: "How It Works"
-image: "/img/_DSC7655-3.jpg"
+subtitle: "Deliveries Throught The Greater Nashville Area"
+image: "/img/mike-tinnion-365019-unsplash.jpg"
 body_image: /img/_DSC7420.jpg
 contact_entries:
   - heading: Location

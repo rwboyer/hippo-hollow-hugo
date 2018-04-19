@@ -1,7 +1,7 @@
 ---
-title: "How It Works"
-image: "/img/_DSC7655-3.jpg"
-body_image: /img/_DSC7420.jpg
+title: "Tennesse Raised On Our Farm"
+subtitle: "No Middleman, Wholesome Food Directly To You"
+image: "/img/cows.jpeg"
 contact_entries:
   - heading: Location
     text: "3153 Lynn Avenue, South San Francisco, California 94080"
